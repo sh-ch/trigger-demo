@@ -5,6 +5,8 @@ steps:
 - name: 'gcr.io/cloud-builders/go'
   args: ['build', 'hello']
   env: ['PROJECT_ROOT=hello']
+- name: 'bash'
+  args: ['printf', 'This is a test\n%.0s', '{1..100000}']
 logsBucket: 'gs://sc-show-logs'
 options:
   logging: GCS_ONLY
