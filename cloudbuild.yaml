@@ -5,5 +5,7 @@ steps:
 - name: 'gcr.io/cloud-builders/go'
   args: ['build', 'hello']
   env: ['PROJECT_ROOT=hello']
+# a comment
+logsBucket: 'gs://sc-show-logs'
 options:
-  logging: CLOUD_LOGGING_ONLY
+  logging: GCS_ONLY
