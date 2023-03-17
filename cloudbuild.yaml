@@ -6,4 +6,4 @@ steps:
   args: ['build', 'hello']
   env: ['PROJECT_ROOT=hello']
 options:
-  logging: CLOUD_LOGGING_ONLY
+  logging: GCS_ONLY
